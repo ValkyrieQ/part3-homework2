@@ -1,7 +1,3 @@
 <ul>
-  <li>Angular</li>
-  <li>Node</li>
-  <li>MySQL, Oracle</li>
-  <li>DevOps (Docker, Kubernetes, Openshift, Jenkins)</li>
-  <li>AWS and Azure</li>
+  <li *ngFor="let skill of skills">{{ skill }}</li>
 </ul>

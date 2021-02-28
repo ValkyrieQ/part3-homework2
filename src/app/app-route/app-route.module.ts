@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { RouterModule, Routes } from '@angular/router';
 
@@ -9,8 +10,6 @@ import { SkillComponent } from '../skill/skill.component';
 import { ContactComponent } from '../contact/contact.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
-
-import { ContentPanelComponent } from '../layout/content-panel/content-panel.component';
 
 const routes: Routes = [
   {
@@ -45,8 +44,14 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [],
-  imports: [CommonModule, RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  declarations: [
+    HomeComponent,
+    SkillComponent,
+    ContactComponent,
+    PortfolioComponent,
+    PageNotFoundComponent,
+  ],
+  imports: [CommonModule, BrowserModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule, CommonModule],
 })
 export class AppRouteModule {}

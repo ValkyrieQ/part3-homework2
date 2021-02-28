@@ -1,2 +1,5 @@
-<p>Tel: 061-xxx-xxxx</p>
-<p>Email: <a href="mailto:chawengwut@gmail.com">chawengwut@gmail.com</a></p>
+<p>Tel: {{ contactDetail["phoneNo"] }}</p>
+<p>
+  Email:
+  <a href="mailto:{{ contactDetail['email'] }}">{{ contactDetail["email"] }}</a>
+</p>
