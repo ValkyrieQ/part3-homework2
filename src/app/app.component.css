@@ -1,0 +1,26 @@
+.nav > ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px 5px 10px 5px;
+  padding-right: 10px;
+
+  border-right: 1px solid lightgray;
+}
+
+.nav > ul > li:last-child {
+  border: none;
+}
+
+.nav a:hover {
+  background-color: aquamarine;
+}
+
+.container {
+  width: 75vw;
+  margin: auto;
+}
+
+.container > .nav {
+  display: table;
+  margin: auto;
+}
